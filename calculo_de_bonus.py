@@ -36,7 +36,7 @@ except ValueError:
 # 3) Solicita ao usuário que digite o valor do bônus recebido
 # Converte a entrada para um número de ponto flutuante
 try:
-    bonus_usuario: float = float(input("Informe o valor do bonus recebido: "))
+    bonus_usuario: float = float(input("Informe o bonus recebido em quantidade de salarios: "))
     if bonus_usuario < 0 or bonus_usuario > limite_bonus:
         print(f'Verifique o valor informado para o bonus.\nLimite de bonus definido para o período: {limite_bonus}')
         exit()
