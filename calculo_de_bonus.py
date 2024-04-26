@@ -48,4 +48,4 @@ calculo_valor_bonus_usuario = valor_base_calculo_bonus + salario_usuario * bonus
 
 # 5) Imprima cálculo do KPI para o usuário
 # 6) Imprime a mensagem personalizada incluindo o nome do usuário, salário e bônus
-print(f"{nome_usuario} o valor do bonus a receber referente ao ano de {ano_vigente} é de R${calculo_valor_bonus_usuario:.2f}")
+print(f"{nome_usuario} seu salario é R${salario_usuario:.2f} e o valor do bonus a receber referente ao ano de {ano_vigente} é de R${calculo_valor_bonus_usuario:.2f}")
