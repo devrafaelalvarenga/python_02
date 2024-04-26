@@ -20,19 +20,20 @@ numero1 = int(input('Digite o primeiro numero: '))
 numero2 = int(input('Digite o segundo numero: '))
 operacao = int(input('Digite a operação desejada:\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n:'))
 
-if operacao == 1:
-    adicao = somar(numero1=numero1, numero2=numero2)
-    print(f'O resultado de {numero1} + {numero2} = {adicao}')
-elif operacao == 2:
-    subtracao = subtrair(numero1=numero1, numero2=numero2)
-    print(f'O resultado de {numero1} - {numero2} = {subtracao}')        
-elif operacao == 3:
-    multiplicacao = multiplicar(numero1=numero1, numero2=numero2)
-    print(f'O resultado de {numero1} * {numero2} = {multiplicacao}')
-try:        
-    if operacao == 4:
+try:
+    if operacao == 1:
+        adicao = somar(numero1=numero1, numero2=numero2)
+        print(f'O resultado de {numero1} + {numero2} = {adicao}')
+    elif operacao == 2:
+        subtracao = subtrair(numero1=numero1, numero2=numero2)
+        print(f'O resultado de {numero1} - {numero2} = {subtracao}')        
+    elif operacao == 3:
+        multiplicacao = multiplicar(numero1=numero1, numero2=numero2)
+        print(f'O resultado de {numero1} * {numero2} = {multiplicacao}')
+    elif operacao == 4:
         divisao = dividir(numero1=numero1, numero2=numero2)
         print(f'O resultado de {numero1} / {numero2} =  {divisao}')
-except ZeroDivisionError as e:
-    print(f'Erro identificado: {e}')
+except ZeroDivisionError:
+    print(f'Erro: Entrada inválida. Divisão por zero.')
+
 
