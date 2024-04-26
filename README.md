@@ -34,3 +34,15 @@ elif idade == 18:
 else:
     print("Maior de idade")
 Ambas as estruturas, try-except e if, são fundamentais para a criação de programas em Python que são capazes de lidar com situações inesperadas (como erros de execução) e tomar decisões com base em condições, permitindo assim que você construa programas mais robustos, flexíveis e seguros.
+
+Any(xyz) / All(xyz)
+
+any() retorna:
+
+True - se pelo menos um elemento de um iterável for verdadeiro
+False - se todos os elementos forem falsos ou se um iterável estiver vazio
+
+all() retorna:
+
+True – se todos os elementos em um iterável forem verdadeiros
+False – Se algum elemento em um iterável for falso
